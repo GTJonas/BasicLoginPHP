@@ -17,6 +17,7 @@
     ?>
     <h1>Welcome to the Logged In Page</h1>
     <p>You are logged in as a valid user.</p>
+    <?php echo "Hello, " . $_SESSION['Username']; ?>
     <a href="logout.php">Logout</a> <!-- You can create a logout script (logout.php) to destroy the session. -->
 </body>
 </html>

@@ -26,6 +26,7 @@
         if ($username === $correctUsername && $password === $correctPassword) {
             // Authentication successful
             $_SESSION['logged_in'] = true;
+            $_SESSION['Username'] = $username;
             header("Location: Loggedin.php"); // Redirect to Loggedin.php
             exit();
         } else {
